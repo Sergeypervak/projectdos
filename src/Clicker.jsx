@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 
 function Clicker() {
   const [count, setCount] = useState (0);
@@ -10,6 +10,10 @@ function Clicker() {
  const decrement = () => {
   setCount(count - 1)
  }
+useEffect(() => {
+   console.log(''); 
+}, []);
+
   return (
     <div className='clicker'>
      <button onClick={decrement}>-</button >
