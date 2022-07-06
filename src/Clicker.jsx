@@ -11,8 +11,9 @@ function Clicker() {
   setCount(count - 1)
  }
 useEffect(() => {
-   console.log(''); 
-}, []);
+   console.log('hello from clicker');
+   return () => console.log('goodbye clicker'); 
+}, [count]);
 
   return (
     <div className='clicker'>
