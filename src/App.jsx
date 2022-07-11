@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import Clicker from "./Clicker";
-import WithRef from "./Ref";
+
+import
 
 
 function App() {
